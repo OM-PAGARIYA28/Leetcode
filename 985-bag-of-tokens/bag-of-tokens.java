@@ -11,7 +11,7 @@ class Solution {
                 left++;
             }
             else if(count>=1 && tokens[left]>power ){
-                if(left==right){break;}
+                if(left==right) break;
                 power+=tokens[right];
                 count--;
                 right--;   
