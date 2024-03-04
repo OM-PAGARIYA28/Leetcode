@@ -6,13 +6,13 @@ class Solution {
         int right=tokens.length-1;
         while(left<=right){
             if(tokens[left]<=power){
-                power-=tokens[left];
+                power=power-tokens[left];
                 count++;
                 left++;
             }
             else if(count>=1 && tokens[left]>power ){
                 if(left==right) break;
-                power+=tokens[right];
+                power=power+tokens[right];
                 count--;
                 right--;   
             }
