@@ -12,7 +12,6 @@ class Solution {
                 num_maxFreq++;
             }
         }
-        int a=Math.max((n+1)*(max-1)+num_maxFreq,tasks.length);
-        return a;
+        return Math.max((n+1)*(max-1)+num_maxFreq,tasks.length);
     }
 }
