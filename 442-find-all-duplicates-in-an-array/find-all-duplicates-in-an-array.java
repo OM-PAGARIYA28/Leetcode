@@ -21,8 +21,8 @@
 
 class Solution {
     public List<Integer> findDuplicates(int[] nums) {
-        var dup=new ArrayList<Integer>();
-        var data=new HashSet<Integer>();
+        List<Integer> dup=new ArrayList<Integer>();
+        Set<Integer> data=new HashSet<Integer>();
         for(int num:nums){
             if(data.contains(num)){
                 dup.add(num);
