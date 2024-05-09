@@ -9,9 +9,9 @@ class Solution {
             if(happiness[i]-count>0 && k>0){
              max+=happiness[i]-count;
             }
-            else{
-                max+=0;
-            }
+            // else{
+            //     max+=0;
+            // }
             count++;
             k--;
            } 
