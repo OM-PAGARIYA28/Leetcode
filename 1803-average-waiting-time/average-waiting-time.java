@@ -1,9 +1,9 @@
 class Solution {
     public double averageWaitingTime(int[][] customers) {
-        int initial=customers[0][0];
-        int end=initial+customers[0][1];
-        double wt=end-initial;
-        for(int i=1;i<customers.length;i++){
+        int initial=0;
+        int end=0;
+        double wt=0;
+        for(int i=0;i<customers.length;i++){
             if(end>=customers[i][0]){
             initial=end;}
             else{
