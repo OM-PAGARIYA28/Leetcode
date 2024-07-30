@@ -5,7 +5,7 @@ class Solution {
             sum+=n%10;
             n/=10;
         }
-        return (sum&1)==0;
+        return sum%2==0;
     }
     public int countEven(int num) {
         int count=0;
